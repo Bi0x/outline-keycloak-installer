@@ -1,0 +1,2 @@
+CREATE DATABASE outline;
+CREATE DATABASE outline_test;

@@ -1,0 +1,24 @@
+version: "3"
+services:
+
+  outline:
+    image: outlinewiki/outline:0.69.2
+    container_name: _REPLACE_OUTLINE_CONTAINER_NAME_HERE_
+    env_file: ./outline.env
+    ports:
+      - "_REPLACE_OUTLINE_PORT_HERE_:3000"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    container_name: _REPLACE_REDIS_CONTAINER_NAME_HERE_
+    env_file: ./outline.env
+    volumes:
+      - ./redis.conf:/redis.conf
+    command: ["redis-server", "/redis.conf"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 30s
+      retries: 3

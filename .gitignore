@@ -1,0 +1,8 @@
+# VSCode config folder
+.vscode
+
+# install data folder
+outline-data
+
+# User config json
+user-config.json

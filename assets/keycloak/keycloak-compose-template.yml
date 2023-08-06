@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.1.1
+    container_name: _REPLACE_KEYCLOAK_CONTAINER_NAME_HERE_
+    ports:
+      - "_REPLACE_KEYCLOAK_HTTP_PORT_HERE_:8080" # HTTP Port
+      - "_REPLACE_KEYCLOAK_HTTPS_PORT_HERE_:8443" # HTTPs Port (Only available with SSL FILE)
+    environment:
+      - KEYCLOAK_ADMIN=_REPLACE_KEYCLOAK_ADMIN_NAME_HERE_
+      - KEYCLOAK_ADMIN_PASSWORD=_REPLACE_KEYCLOAK_ADMIN_PASSWORD_HERE_
+      - KC_HTTPS_CERTIFICATE_FILE=
+      - KC_HTTPS_CERTIFICATE_KEY_FILE=
+    # volumes:
+    #   - $PWD/certs/domain.crt:/opt/keycloak/conf/server.crt.pem
+    #   - $PWD/certs/domain.key:/opt/keycloak/conf/server.key.pem
+    command: start-dev
