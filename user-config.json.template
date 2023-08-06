@@ -1,0 +1,16 @@
+{
+    "installType": "new",
+    "adminUsername": "bi0x",
+    "adminPassword": "bi0xi0bi0xi0b",
+    "ssoURL": "http://example.bi0x.com:6001/",
+    "ssoName": "Keycloak SSO",
+    "ssoHttpPort": "6001",
+    "ssoHttpsPort": "6002",
+    "sqlIP": "example.bi0x.com",
+    "sqlPort": "6432",
+    "minioBucketURL": "http://example.bi0x.com:9000/",
+    "minioBucketPort": "9000",
+    "minioAdminPort": "9001",
+    "outlinePort": "6003",
+    "outlineBaseUrl": "http://example.bi0x.com:6003/"
+}

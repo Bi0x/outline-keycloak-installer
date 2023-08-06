@@ -39,7 +39,7 @@
     "sqlPort": "6432",
 
     # MinIO 存储访问地址。
-    "minioBucketURL": "http://192.168.50.17:9000/",
+    "minioBucketURL": "http://example.bi0x.com:9000/",
 
     # MinIO 存储端口。
     "minioBucketPort": "9000",
@@ -51,7 +51,7 @@
     "outlinePort": "6003",
 
     # Outline 访问地址。
-    "outlineBaseUrl": "http://192.168.50.17:6003/"
+    "outlineBaseUrl": "http://example.bi0x.com:6003/"
 }
 ```
 - 确认配置无误后 `bash install_outline.sh`，等待执行完成。

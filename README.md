@@ -41,7 +41,7 @@
     "sqlPort": "6432",
 
     # MinIO bucket access URL.
-    "minioBucketURL": "http://192.168.50.17:9000/",
+    "minioBucketURL": "http://example.bi0x.com:9000/",
 
     # MinIO bucket external port.
     "minioBucketPort": "9000",
@@ -53,7 +53,7 @@
     "outlinePort": "6003",
 
     # Outline access URL.
-    "outlineBaseUrl": "http://192.168.50.17:6003/"
+    "outlineBaseUrl": "http://example.bi0x.com:6003/"
 }
 ```
 - Please make sure user-config.json is correct. Then use `bash install_outline.sh` to start installation.
